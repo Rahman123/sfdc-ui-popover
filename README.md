@@ -1,11 +1,6 @@
-# Salesforce Lightning Popover Component (Deprecated)
+# Salesforce Lightning Popover Component
 
 <img src="screenshots/media-example.png" width="300" align="right"/>
-
-**WARNING:** this component is deprectated.<br/>
-It is replaced by official Winter '18 built-in components:
-- [lightning:helptext](https://developer.salesforce.com/docs/atlas.en-us.lightning.meta/lightning/aura_compref_lightning_helptext.htm) for text only tooltips
-- [lightning:overlayLibrary](https://developer.salesforce.com/docs/atlas.en-us.lightning.meta/lightning/ref_lightning_overlayLibrary.htm) for media tooltips
 
 ## About
 This is a generic popover (tooltip) component built using Salesforce Lightning.<br/>
@@ -34,19 +29,15 @@ Paste the following code in a new Lightning Application to try it out:
 
 ``` xml
 <aura:application extends="force:slds">
-	<div class="slds-grid slds-grid--frame slds-grid--align-center slds-grid--vertical-align-center">
-		
-		<div>Note that&nbsp;
-		    <ui_popover:popover>
-			<aura:set attribute="popoverBody">
-			    <h3 class="slds-section-title">The Popover Title</h3>
-			    <p class="slds-m-bottom--x-small">Some textual description or <b>any</b> kind of markup including other components.</p>
-			</aura:set>
-			<a href="javascript:void(0);">hovering over this content (not necessarily a link) triggers the popover</a>
-		    </ui_popover:popover>
-	&nbsp;and it renders really nicely with SLDS.</div>
-	
-	</div>
+	<div style="text-align:center; margin-top:300px;">Note that&nbsp;
+    <ui_popover:popover>
+        <aura:set attribute="popoverBody">
+            <h3 class="slds-section-title">The Popover Title</h3>
+            <p class="slds-m-bottom--x-small">Some textual description or <b>any</b> kind of markup including other components.</p>
+        </aura:set>
+        <a href="javascript:void(0);">hovering over this content (not necessarily a link) triggers the popover</a>
+    </ui_popover:popover>
+&nbsp;and it renders really nicely with SLDS.</div>
 </aura:application>
 ```
 
